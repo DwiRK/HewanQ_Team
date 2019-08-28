@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/no_data_jual"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/no_produk"
+            android:background="@drawable/no_produk"
+            android:layout_width="200dp"
+            android:layout_height="125dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp">
+
+        <!--### PLACE RECYCLE VIEW HERE ###-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_recycler_produk_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </android.support.v7.widget.RecyclerView>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:translationZ="8dp"
+        android:background="@drawable/rounded_full_btn_green">
+
+        <!--### PLUS BUTTON ###-->
+        <ImageView
+            android:id="@+id/add_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/circle_add"/>
+    </LinearLayout>
+</RelativeLayout>

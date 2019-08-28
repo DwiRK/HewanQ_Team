@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.hewanq.hewanq">
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_hewanq"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_hewanq"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".View.Activity.ActivityLogin"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".View.Activity.ActivityMain"
+            android:theme="@style/HomeTheme" />
+        <activity
+            android:name=".View.Activity.ActivityTambahProduk"
+            android:parentActivityName=".View.Activity.ActivityMain"
+            android:theme="@style/BlueDark" />
+        <activity
+            android:name=".View.Activity.ActivityEditProduk"
+            android:parentActivityName=".View.Activity.ActivityMain"
+            android:theme="@style/BlueDark" />
+        <activity
+            android:name=".View.Activity.ActivityRegister"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".View.Activity.ActivityTambahArtikel"
+            android:parentActivityName=".View.Activity.ActivityMain"
+            android:theme="@style/BlueDark" />
+        <activity android:name=".View.Activity.ActivityTambahJasa" />
+        <activity
+            android:name=".View.Activity.ActivitySplashScreen"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".View.Activity.ActivityListHewan"
+            android:parentActivityName=".View.Activity.ActivityMain"
+            android:theme="@style/BlueDark" />
+        <activity
+            android:name=".View.Activity.ActivityListJualBeli"
+            android:parentActivityName=".View.Activity.ActivityMain"
+            android:theme="@style/BlueDark" />
+        <activity
+            android:name=".View.Activity.ActivityListDokter"
+            android:parentActivityName=".View.Activity.ActivityMain"
+            android:theme="@style/BlueDark" />
+        <activity
+            android:name=".View.Activity.ActivityListJasa"
+            android:parentActivityName=".View.Activity.ActivityMain"
+            android:theme="@style/BlueDark" />
+        <activity
+            android:name=".View.Activity.ActivityListArtikel"
+            android:parentActivityName=".View.Activity.ActivityMain"
+            android:theme="@style/BlueDark" />
+        <activity android:name=".View.Activity.ActivityDetailJasa">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".View.Activity.ActivityDetailHewan">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".View.Activity.ActivityDetailProduk">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".View.Activity.ActivityDetailArtikel">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".View.Activity.ActivityDetailDokter">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".View.Activity.ActivityTambahHewan">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".View.Activity.ActivityListJualHewan">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".View.Activity.ActivityListJualJasa">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".View.Activity.ActivityListJualProduk">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".View.Activity.ActivityEditProfile">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".View.Activity.ActivityListPembelian">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".View.Activity.ActivityListPenjualan">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".View.Activity.ActivityListProduk"></activity>
+    </application>
+
+</manifest>

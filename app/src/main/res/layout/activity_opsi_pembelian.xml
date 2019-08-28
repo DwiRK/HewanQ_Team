@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- METODE PEMBAYARAN -->
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Pilih metode pembayaran :"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_white"
+                android:layout_margin="8dp"
+                android:elevation="6dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_gray_half_rectangle"
+                    android:text="Transfer"/>
+
+                <RadioGroup
+                    android:id="@+id/metode_pembayaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <RadioButton
+                        android:id="@+id/bank_mandiri"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bank Mandiri"/>
+                    <RadioButton
+                        android:id="@+id/bank_bri"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bank BRI" />
+                    <RadioButton
+                        android:id="@+id/bank_bca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bank BCA" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <!-- METODE PENGIRIMAN -->
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Pilih metode pengiriman :"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_white"
+                android:layout_margin="8dp"
+                android:elevation="6dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_gray_half_rectangle"
+                    android:text="Kurir Pengantar"/>
+
+                <RadioGroup
+                    android:id="@+id/metode_pengiriman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <RadioButton
+                        android:id="@+id/paket_pos_indonesia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Paket Pos Indonesia" />
+                    <RadioButton
+                        android:id="@+id/paket_jne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Paket JNE" />
+                    <RadioButton
+                        android:id="@+id/paket_jnt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/JnT" />
+                    <RadioButton
+                        android:id="@+id/go_send"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Go - Send" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/lanjutkan_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/rounded_btn_green"
+                android:text="lanjutkan"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

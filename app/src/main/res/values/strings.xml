@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HewanQ</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="JnT">Paket J&amp;T</string>
+    <string-array name="jenis_hewan">
+        <item>Kucing</item>
+        <item>Burung</item>
+        <item>Hamster</item>
+        <item>Ikan</item>
+        <item>Anjing</item>
+    </string-array>
+    <string-array name="jenis_kelamin">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+</resources>
